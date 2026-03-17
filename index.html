@@ -1,0 +1,103 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Figma, Plugin, Design-to-Code, Quality Assurance, Design Tokens, Git-Integration, Shift-Left, Tailwind CSS">
+    <title>Bridgy – FHNW - Studierendenprojekte im Bachelorstudium</title>
+    <link href="https://web0.fhnw.ch/ht/informatik/css/style.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="https://web0.fhnw.ch/ht/informatik/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+           <div class="row">
+                <div class="col s12 offset-m1 m10 offset-l2 l8">
+                    <a href="https://www.fhnw.ch/de/studium/informatik" class="hsi">
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="https://web0.fhnw.ch/ht/informatik/images/fhnw_hsi_de.svg" alt="HSI">
+                            <img src="https://web0.fhnw.ch/ht/informatik/images/fhnw_hsi_small.svg" alt="HSI">
+                        </picture>
+                    </a>
+               	</div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 offset-m1 m10 offset-l2 l8">
+                    <h1>Bridgy</h1>
+                    <h2>Token-Driven Quality Assurance for Figma Design Systems: Eine intelligente Brücke, die den Graben zwischen UI/UX-Design und Frontend-Entwicklung schliesst.</h2>
+                    
+                    <h3>Ausgangslage</h3>
+                    <p>In der modernen Softwareentwicklung führt die manuelle Übergabe (Handoff) von Designs an die Programmierung häufig zu Inkonsistenzen und fehleranfälligen Workflows. Bisherige Automatisierungstools versuchen oft, Code direkt aus ungeprüften Designs zu generieren. Das scheitert meist am sogenannten "Design-to-Code Impedance Mismatch": Wenn Entwürfe im Design-Tool nicht konsequent strukturiert sind, werden diese Fehler ungeprüft in die Codebasis übertragen ("Garbage In, Garbage Out"). Es entsteht technische Schuld, die schwer zu warten ist.</p>
+                    
+                    <h3>Zielsetzung</h3>
+                    <p>Ziel der Bachelorarbeit war ein methodischer Paradigmenwechsel: Weg von der reaktiven Fehlerbehebung im Code, hin zu einer präventiven Qualitätssicherung direkt an der Quelle im Design-Tool ("Shift-Left"). Es sollte ein geschlossener Regelkreis (Closed-Loop-System) für Figma entwickelt werden, der die "Gesundheit" eines Design Systems messbar macht, Inkonsistenzen aufzeigt und bereinigte Daten nahtlos in die Versionskontrolle der Entwicklungs-Teams überträgt.</p>
+                </div>
+            </div></div> <section class="grey-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <h3>Der DSQ-Score</h3>
+                        <div class="materialboxed-wrap">
+                            <img src="images/quality-score.png" class="responsive materialboxed hoverable" alt="Bridgy Quality Tab">
+                        </div>
+                        <p>Bridgy analysiert das Design und berechnet einen verständlichen Quality-Score. Fehler wie hartkodierte Farben werden sofort sichtbar.</p>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <h3>Intelligentes Auto-Fixing</h3>
+                        <div class="materialboxed-wrap">
+                            <img src="images/auto-fix.png" class="responsive materialboxed hoverable" alt="Bridgy Auto-Fix">
+                        </div>
+                        <p>Das Plugin macht keine unvorhersehbaren Änderungen, sondern bietet deterministische Lösungsvorschläge (Exact Match) zur Behebung von Fehlern an.</p>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <h3>Native Git-Integration</h3>
+                        <div class="materialboxed-wrap">
+                            <img src="images/git-integration.png" class="responsive materialboxed hoverable" alt="Bridgy Git Export">
+                        </div>
+                        <p>Saubere Design-Tokens können direkt als Merge Request in GitLab oder GitHub exportiert werden, was Silos zwischen den Teams aufbricht.</p>
+                    </div>
+                </div></div> </section><div class="container">
+            <div class="row">
+                <div class="col s12 offset-m1 m10 offset-l2 l8">
+                    <h3>Ergebnisse</h3>
+                    <p>Mit "Bridgy" wurde ein voll funktionsfähiges und sicheres Figma-Plugin entwickelt, das als vermittelndes Element (Boundary Object) zwischen Design und Code fungiert. Zu den zentralen Features gehören:</p>
+                    <ul class="nobullet">
+                        <li><strong>Design Linting:</strong> Rekursive Überprüfung auf hartkodierte Werte und ungenutzte Komponenten.</li>
+                        <li><strong>Automatisierte Tailwind-Readiness:</strong> Prüfung und Anpassung von Variablen an moderne Framework-Konventionen.</li>
+                        <li><strong>Sicherer Datenaustausch:</strong> Direkter Export in CSS, SCSS oder Tailwind via Git, abgesichert durch lokale AES-256-GCM Verschlüsselung der Zugangstokens.</li>
+                        <li><strong>Smart Import:</strong> Änderungen aus dem Code können via Copy-Paste mit einer detaillierten Diff-Vorschau wieder nach Figma zurückgeführt werden.</li>
+                    </ul>
+                    <p>Die Evaluation durch Fachexperten (Product Manager, UX-Designer und Frontend-Entwickler) bestätigte die Wirksamkeit eindrücklich: Das Tool reduziert den Handoff-Overhead massiv, steigert die Codequalität durch saubere Inputs und wandelt die historisch fehleranfällige Übergabe in einen kollaborativen Prozess.</p>
+                    
+                    <h3>Technische Schlüsselbegriffe</h3>
+                    <ul class="keyterms">
+                        <li><span>Figma</span>Plugin API</li>
+                        <li><span>Architektur</span>Design Tokens</li>
+                        <li><span>Methode</span>Shift-Left QA</li>
+                        <li><span>Security</span>Web Crypto API (AES-GCM)</li>
+                        <li><span>Integration</span>GitLab / GitHub REST API</li>
+                        <li><span>Tech-Stack</span>TypeScript, Vanilla JS</li>
+                    </ul>
+                    
+                    <h3>Auftraggeber</h3>
+                    <p><strong>Institut für Mobile und Verteilte Systeme (IMVS)</strong><br>
+                        Fachhochschule Nordwestschweiz (FHNW)<br>
+						<a href="https://www.fhnw.ch/plattformen/imvs/" target="_blank">Website des IMVS</a>
+                    </p>
+                    
+                    <h3>Team</h3>
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <p>Samuel Lupica<br>
+								Laurin Scheuber<br></p>
+							<p><strong>Betreuer</strong><br>
+								Prof. Martin Kropp<br>
+                                Fabian Affolter</p>
+                        </div>
+                    </div></div>
+            </div>
+        </div>
+    </main>
