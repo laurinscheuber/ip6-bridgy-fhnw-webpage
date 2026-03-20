@@ -1,0 +1,1 @@
+Bridgy ist ein Figma-Plugin für präventive Qualitätssicherung. Es analysiert Design-Tokens, berechnet einen Quality-Score und synchronisiert saubere Daten direkt via Git mit der Codebasis.
